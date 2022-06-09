@@ -21,11 +21,6 @@ def get_feed_page(request: HttpRequest) -> HttpResponse:
     return render(request, "add.html")
 
 
-
-
-# # 수정페이지 이동 변경예정 효정님 _______________
-
-
 # detail/feeds/ (추가)
 @content.post("/feed/", response=DetailResponse)
 @login_required(login_url="/login/")
