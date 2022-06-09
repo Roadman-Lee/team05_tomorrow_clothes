@@ -1,7 +1,7 @@
 # from django.test import TestCase
 #
 # from user_admission.models.user import User
-# from user_admission.sevices.login_service import create_user
+# from user_admission.services.login_service import create_user
 #
 #
 # class TestCreateService(TestCase):

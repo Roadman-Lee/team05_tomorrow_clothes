@@ -10,7 +10,6 @@ from content_post.services.get_feed_list_service import get_feed_list
 content = Router(tags=["Main"])
 
 
-# 김윤서
 # main page render router
 @content.get("", url_name="main", response=list[MainResponse])
 def get_main_page(request: HttpRequest) -> HttpResponse:
@@ -33,11 +32,9 @@ def get_main_page(request: HttpRequest) -> HttpResponse:
     return render(request, "main.html", {"pages": pages})
 
 
-
 @content.get("/weather/")
 def get_weather_page(request: HttpRequest) -> HttpResponse:
     return render(request, "weather.html")
-
 
 
 @content.get("/member/")
